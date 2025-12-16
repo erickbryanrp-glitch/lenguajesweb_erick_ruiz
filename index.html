@@ -36,6 +36,101 @@
             </div>
         </section>
     </main>
+    <section id="quienes" class="seccion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Quiénes somos</h2>
+            <div class="grid-dos">
+                <div class="card-info">
+                    <p>
+                        Somos un equipo enfocado en la producción audiovisual y el diseño gráfico. Nos gusta
+                        contar historias, crear identidades visuales y apoyar a personas y emprendimientos
+                        para que comuniquen mejor su imagen.
+                    </p>
+                    <p>
+                        Trabajamos con un proceso claro: escuchamos tu idea, proponemos una solución y
+                        entregamos un resultado profesional.
+                    </p>
+                </div>
+
+                <div class="card-info destacado">
+                    <h3>Nuestra misión</h3>
+                    <p>Transformar ideas en contenido visual atractivo, ordenado y fácil de compartir.</p>
+                    <ul class="lista-check">
+                        <li>Trabajo creativo y responsable</li>
+                        <li>Comunicación clara</li>
+                        <li>Entregables organizados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Servicios -->
+    <section id="servicios" class="seccion seccion-gris">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Servicios</h2>
+
+            <div class="grid-servicios">
+                <article class="tarjeta-servicio">
+                    <h3>Fotografía</h3>
+                    <p>Retratos, productos y eventos con edición básica incluida.</p>
+                    <a class="link-tarjeta" href="#contacto">Cotizar</a>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <h3>Video y edición</h3>
+                    <p>Reels, clips promocionales, entrevistas y contenido para redes.</p>
+                    <a class="link-tarjeta" href="#contacto">Cotizar</a>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <h3>Diseño gráfico</h3>
+                    <p>Logos, banners, piezas para redes sociales y branding básico.</p>
+                    <a class="link-tarjeta" href="#contacto">Cotizar</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="seccion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Contacto</h2>
+
+            <form class="formulario" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="tucorreo@email.com" required />
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu idea..."
+                        required></textarea>
+                </div>
+
+                <button class="btn-secundario" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+        <div class="contenedor pie-contenido">
+            <p>© <span id="anio"></span> FILMEC. Todos los derechos reservados.</p>
+            <p class="mini">Hecho con HTML y CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("anio").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 

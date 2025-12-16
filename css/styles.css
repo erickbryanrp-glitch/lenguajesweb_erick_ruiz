@@ -120,3 +120,155 @@ body {
     background-color: aquamarine;
     color: chocolate;
 }
+.btn-secundario{
+  background-color: var(--verde);
+  color: var(--blanco);
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-secundario:hover{
+  filter: brightness(1.1);
+}
+
+/* ===== Quiénes somos ===== */
+.grid-dos{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.card-info{
+  background: var(--blanco);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card-info h3{
+  color: var(--verde);
+  margin-bottom: 8px;
+}
+
+.card-info p + p{
+  margin-top: 10px;
+}
+
+.destacado{
+  border-left: 6px solid var(--amarillo);
+}
+
+.lista-check{
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.lista-check li{
+  margin: 6px 0;
+}
+
+/* ===== Servicios ===== */
+.grid-servicios{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tarjeta-servicio{
+  background: var(--blanco);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-top: 6px solid var(--amarillo);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarjeta-servicio h3{
+  color: var(--verde);
+}
+
+.link-tarjeta{
+  margin-top: auto;
+  font-weight: 700;
+  color: var(--verde);
+  text-decoration: none;
+}
+
+.link-tarjeta:hover{
+  text-decoration: underline;
+}
+
+/* ===== Formulario ===== */
+.formulario{
+  background: var(--blanco);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  max-width: 650px;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+label{
+  font-weight: 700;
+  color: var(--verde);
+}
+
+input, textarea{
+  font: inherit;
+  padding: 12px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus, textarea:focus{
+  border-color: var(--amarillo);
+  box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.25);
+}
+
+/* ===== Footer ===== */
+.pie{
+  background: var(--verde);
+  color: var(--blanco);
+  padding: 18px 0;
+  margin-top: 20px;
+  border-top: 5px solid var(--amarillo);
+}
+
+.pie-contenido{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.mini{
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+@media (max-width: 900px){
+  .grid-servicios{
+    grid-template-columns: 1fr;
+  }
+  .grid-dos{
+    grid-template-columns: 1fr;
+  }
+  .contenedor-banner h1{
+    font-size: 38px;
+  }
+}
